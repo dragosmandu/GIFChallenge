@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D7D72C5ADE5B5C4C17AED4D /* Pods_GIFChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B272519B61E80BF457DB3ACF /* Pods_GIFChallenge.framework */; };
+		F83F49C82681E31100CEC659 /* FileManager+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F49C72681E31100CEC659 /* FileManager+Ext.swift */; };
+		F83F49CA2681E37C00CEC659 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F49C92681E37C00CEC659 /* String+Ext.swift */; };
+		F83F49CC2681E39500CEC659 /* Data+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F49CB2681E39500CEC659 /* Data+Ext.swift */; };
+		F83F49CE2681EF2B00CEC659 /* WeiConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F49CD2681EF2B00CEC659 /* WeiConvertor.swift */; };
+		F83F49D02682207F00CEC659 /* TXSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F49CF2682207F00CEC659 /* TXSigner.swift */; };
+		F83F49D42682248F00CEC659 /* GasData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F49D32682248F00CEC659 /* GasData.swift */; };
+		F83F49D626823AED00CEC659 /* HDWallet+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F49D526823AED00CEC659 /* HDWallet+Ext.swift */; };
+		F86E14F22681D90700C82A52 /* GIFPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E14F12681D90700C82A52 /* GIFPlayer.swift */; };
+		F86E14F52681D95B00C82A52 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E14F42681D95B00C82A52 /* UIImage+Ext.swift */; };
+		F87A94362680BCB400AD1DC5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89ED9C92680B2FE0060B0D8 /* RootViewController.swift */; };
+		F87A94372680BCB400AD1DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89ED9C52680B2FE0060B0D8 /* AppDelegate.swift */; };
+		F87A94382680BCB400AD1DC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89ED9C72680B2FE0060B0D8 /* SceneDelegate.swift */; };
+		F87A943A2680C08D00AD1DC5 /* CreateWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A94392680C08C00AD1DC5 /* CreateWalletViewController.swift */; };
+		F87A943C2680C1A300AD1DC5 /* WalletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A943B2680C1A300AD1DC5 /* WalletService.swift */; };
+		F87A943E2680C2E800AD1DC5 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A943D2680C2E800AD1DC5 /* KeychainWrapper.swift */; };
+		F87A94402680C8D400AD1DC5 /* WalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A943F2680C8D400AD1DC5 /* WalletData.swift */; };
+		F87A94422680D06200AD1DC5 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A94412680D06200AD1DC5 /* Globals.swift */; };
+		F87A94442680D35900AD1DC5 /* WalletDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A94432680D35900AD1DC5 /* WalletDashboardViewController.swift */; };
+		F87A94462680D7C800AD1DC5 /* ElrondAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A94452680D7C800AD1DC5 /* ElrondAPIService.swift */; };
+		F87A94482680DC3E00AD1DC5 /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A94472680DC3E00AD1DC5 /* AccountInfo.swift */; };
+		F87A944A2680F18800AD1DC5 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A94492680F18800AD1DC5 /* SendViewController.swift */; };
+		F87A944C2680FBBA00AD1DC5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A944B2680FBBA00AD1DC5 /* TextField.swift */; };
+		F87A945826812C3900AD1DC5 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87A945726812C3900AD1DC5 /* ActionButton.swift */; };
+		F89ED9CF2680B3000060B0D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89ED9CE2680B3000060B0D8 /* Assets.xcassets */; };
+		F89ED9D22680B3000060B0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89ED9D02680B3000060B0D8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AAE4B5326AA8B84637D56F4 /* Pods-GIFChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFChallenge.release.xcconfig"; path = "Target Support Files/Pods-GIFChallenge/Pods-GIFChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B272519B61E80BF457DB3ACF /* Pods_GIFChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83F49C72681E31100CEC659 /* FileManager+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Ext.swift"; sourceTree = "<group>"; };
+		F83F49C92681E37C00CEC659 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		F83F49CB2681E39500CEC659 /* Data+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ext.swift"; sourceTree = "<group>"; };
+		F83F49CD2681EF2B00CEC659 /* WeiConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiConvertor.swift; sourceTree = "<group>"; };
+		F83F49CF2682207F00CEC659 /* TXSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXSigner.swift; sourceTree = "<group>"; };
+		F83F49D32682248F00CEC659 /* GasData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasData.swift; sourceTree = "<group>"; };
+		F83F49D526823AED00CEC659 /* HDWallet+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HDWallet+Ext.swift"; sourceTree = "<group>"; };
+		F86E14F12681D90700C82A52 /* GIFPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFPlayer.swift; sourceTree = "<group>"; };
+		F86E14F42681D95B00C82A52 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		F87A94392680C08C00AD1DC5 /* CreateWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewController.swift; sourceTree = "<group>"; };
+		F87A943B2680C1A300AD1DC5 /* WalletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletService.swift; sourceTree = "<group>"; };
+		F87A943D2680C2E800AD1DC5 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		F87A943F2680C8D400AD1DC5 /* WalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletData.swift; sourceTree = "<group>"; };
+		F87A94412680D06200AD1DC5 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		F87A94432680D35900AD1DC5 /* WalletDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDashboardViewController.swift; sourceTree = "<group>"; };
+		F87A94452680D7C800AD1DC5 /* ElrondAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElrondAPIService.swift; sourceTree = "<group>"; };
+		F87A94472680DC3E00AD1DC5 /* AccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
+		F87A94492680F18800AD1DC5 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		F87A944B2680FBBA00AD1DC5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		F87A945726812C3900AD1DC5 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		F89ED9C22680B2FE0060B0D8 /* GIFChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89ED9C52680B2FE0060B0D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F89ED9C72680B2FE0060B0D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F89ED9C92680B2FE0060B0D8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F89ED9CE2680B3000060B0D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F89ED9D12680B3000060B0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F89ED9D32680B3000060B0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C1D94985AF8E8BF6EAA342 /* Pods-GIFChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFChallenge.debug.xcconfig"; path = "Target Support Files/Pods-GIFChallenge/Pods-GIFChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F89ED9BF2680B2FE0060B0D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7D72C5ADE5B5C4C17AED4D /* Pods_GIFChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0012F5209287E3576E9B2E98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B272519B61E80BF457DB3ACF /* Pods_GIFChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		059CF37266700EFB2ED0F09F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1D94985AF8E8BF6EAA342 /* Pods-GIFChallenge.debug.xcconfig */,
+				0AAE4B5326AA8B84637D56F4 /* Pods-GIFChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F86E14F32681D95200C82A52 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F83F49CB2681E39500CEC659 /* Data+Ext.swift */,
+				F83F49C72681E31100CEC659 /* FileManager+Ext.swift */,
+				F83F49D526823AED00CEC659 /* HDWallet+Ext.swift */,
+				F83F49C92681E37C00CEC659 /* String+Ext.swift */,
+				F86E14F42681D95B00C82A52 /* UIImage+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F87A94352680BCA700AD1DC5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F87A94532681020B00AD1DC5 /* Controllers */,
+				F86E14F32681D95200C82A52 /* Extensions */,
+				F87A9451268101E200AD1DC5 /* Helpers */,
+				F87A944F268101B600AD1DC5 /* Models */,
+				F87A94522681020100AD1DC5 /* Networking */,
+				F87A9450268101D100AD1DC5 /* Root */,
+				F87A94542681245900AD1DC5 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F87A944F268101B600AD1DC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F87A94472680DC3E00AD1DC5 /* AccountInfo.swift */,
+				F83F49D32682248F00CEC659 /* GasData.swift */,
+				F87A943F2680C8D400AD1DC5 /* WalletData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F87A9450268101D100AD1DC5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F89ED9C52680B2FE0060B0D8 /* AppDelegate.swift */,
+				F89ED9C92680B2FE0060B0D8 /* RootViewController.swift */,
+				F89ED9C72680B2FE0060B0D8 /* SceneDelegate.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F87A9451268101E200AD1DC5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F87A94412680D06200AD1DC5 /* Globals.swift */,
+				F87A943D2680C2E800AD1DC5 /* KeychainWrapper.swift */,
+				F83F49CF2682207F00CEC659 /* TXSigner.swift */,
+				F87A943B2680C1A300AD1DC5 /* WalletService.swift */,
+				F83F49CD2681EF2B00CEC659 /* WeiConvertor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F87A94522681020100AD1DC5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F87A94452680D7C800AD1DC5 /* ElrondAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F87A94532681020B00AD1DC5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F87A94392680C08C00AD1DC5 /* CreateWalletViewController.swift */,
+				F87A94492680F18800AD1DC5 /* SendViewController.swift */,
+				F87A94432680D35900AD1DC5 /* WalletDashboardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F87A94542681245900AD1DC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F87A945726812C3900AD1DC5 /* ActionButton.swift */,
+				F86E14F12681D90700C82A52 /* GIFPlayer.swift */,
+				F87A944B2680FBBA00AD1DC5 /* TextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F89ED9B92680B2FE0060B0D8 = {
+			isa = PBXGroup;
+			children = (
+				F89ED9C42680B2FE0060B0D8 /* GIFChallenge */,
+				F89ED9C32680B2FE0060B0D8 /* Products */,
+				059CF37266700EFB2ED0F09F /* Pods */,
+				0012F5209287E3576E9B2E98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F89ED9C32680B2FE0060B0D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F89ED9C22680B2FE0060B0D8 /* GIFChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F89ED9C42680B2FE0060B0D8 /* GIFChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F87A94352680BCA700AD1DC5 /* Sources */,
+				F89ED9CE2680B3000060B0D8 /* Assets.xcassets */,
+				F89ED9D02680B3000060B0D8 /* LaunchScreen.storyboard */,
+				F89ED9D32680B3000060B0D8 /* Info.plist */,
+			);
+			path = GIFChallenge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F89ED9C12680B2FE0060B0D8 /* GIFChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89ED9D62680B3000060B0D8 /* Build configuration list for PBXNativeTarget "GIFChallenge" */;
+			buildPhases = (
+				BD8FECDF3AB8541FF06A130A /* [CP] Check Pods Manifest.lock */,
+				F89ED9BE2680B2FE0060B0D8 /* Sources */,
+				F89ED9BF2680B2FE0060B0D8 /* Frameworks */,
+				F89ED9C02680B2FE0060B0D8 /* Resources */,
+				E0927505F508F04B4C6D0CF3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFChallenge;
+			productName = GIFChallenge;
+			productReference = F89ED9C22680B2FE0060B0D8 /* GIFChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F89ED9BA2680B2FE0060B0D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F89ED9C12680B2FE0060B0D8 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = F89ED9BD2680B2FE0060B0D8 /* Build configuration list for PBXProject "GIFChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F89ED9B92680B2FE0060B0D8;
+			productRefGroup = F89ED9C32680B2FE0060B0D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F89ED9C12680B2FE0060B0D8 /* GIFChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F89ED9C02680B2FE0060B0D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89ED9D22680B3000060B0D8 /* LaunchScreen.storyboard in Resources */,
+				F89ED9CF2680B3000060B0D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD8FECDF3AB8541FF06A130A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIFChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0927505F508F04B4C6D0CF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIFChallenge/Pods-GIFChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIFChallenge/Pods-GIFChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIFChallenge/Pods-GIFChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F89ED9BE2680B2FE0060B0D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F83F49D02682207F00CEC659 /* TXSigner.swift in Sources */,
+				F83F49CA2681E37C00CEC659 /* String+Ext.swift in Sources */,
+				F87A94422680D06200AD1DC5 /* Globals.swift in Sources */,
+				F87A94372680BCB400AD1DC5 /* AppDelegate.swift in Sources */,
+				F87A94462680D7C800AD1DC5 /* ElrondAPIService.swift in Sources */,
+				F87A943C2680C1A300AD1DC5 /* WalletService.swift in Sources */,
+				F87A94402680C8D400AD1DC5 /* WalletData.swift in Sources */,
+				F83F49C82681E31100CEC659 /* FileManager+Ext.swift in Sources */,
+				F83F49CC2681E39500CEC659 /* Data+Ext.swift in Sources */,
+				F83F49CE2681EF2B00CEC659 /* WeiConvertor.swift in Sources */,
+				F87A944C2680FBBA00AD1DC5 /* TextField.swift in Sources */,
+				F87A94442680D35900AD1DC5 /* WalletDashboardViewController.swift in Sources */,
+				F87A94362680BCB400AD1DC5 /* RootViewController.swift in Sources */,
+				F83F49D626823AED00CEC659 /* HDWallet+Ext.swift in Sources */,
+				F87A94482680DC3E00AD1DC5 /* AccountInfo.swift in Sources */,
+				F86E14F52681D95B00C82A52 /* UIImage+Ext.swift in Sources */,
+				F87A944A2680F18800AD1DC5 /* SendViewController.swift in Sources */,
+				F87A943E2680C2E800AD1DC5 /* KeychainWrapper.swift in Sources */,
+				F87A943A2680C08D00AD1DC5 /* CreateWalletViewController.swift in Sources */,
+				F87A94382680BCB400AD1DC5 /* SceneDelegate.swift in Sources */,
+				F83F49D42682248F00CEC659 /* GasData.swift in Sources */,
+				F87A945826812C3900AD1DC5 /* ActionButton.swift in Sources */,
+				F86E14F22681D90700C82A52 /* GIFPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F89ED9D02680B3000060B0D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F89ED9D12680B3000060B0D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F89ED9D42680B3000060B0D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F89ED9D52680B3000060B0D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F89ED9D72680B3000060B0D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C1D94985AF8E8BF6EAA342 /* Pods-GIFChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN85J579H5;
+				INFOPLIST_FILE = GIFChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.thecircle.GIFChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F89ED9D82680B3000060B0D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAE4B5326AA8B84637D56F4 /* Pods-GIFChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN85J579H5;
+				INFOPLIST_FILE = GIFChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.thecircle.GIFChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F89ED9BD2680B2FE0060B0D8 /* Build configuration list for PBXProject "GIFChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89ED9D42680B3000060B0D8 /* Debug */,
+				F89ED9D52680B3000060B0D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F89ED9D62680B3000060B0D8 /* Build configuration list for PBXNativeTarget "GIFChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89ED9D72680B3000060B0D8 /* Debug */,
+				F89ED9D82680B3000060B0D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F89ED9BA2680B2FE0060B0D8 /* Project object */;
+}

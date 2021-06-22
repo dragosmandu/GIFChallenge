@@ -1,0 +1,44 @@
+PODS:
+  - Giphy (2.1.9):
+    - libwebp
+  - libwebp (1.2.0):
+    - libwebp/demux (= 1.2.0)
+    - libwebp/mux (= 1.2.0)
+    - libwebp/webp (= 1.2.0)
+  - libwebp/demux (1.2.0):
+    - libwebp/webp
+  - libwebp/mux (1.2.0):
+    - libwebp/demux
+  - libwebp/webp (1.2.0)
+  - SnapKit (5.0.1)
+  - SwiftProtobuf (1.17.0)
+  - TrustWalletCore (2.6.10):
+    - TrustWalletCore/Core (= 2.6.10)
+  - TrustWalletCore/Core (2.6.10):
+    - TrustWalletCore/Types
+  - TrustWalletCore/Types (2.6.10):
+    - SwiftProtobuf
+
+DEPENDENCIES:
+  - Giphy
+  - SnapKit
+  - TrustWalletCore
+
+SPEC REPOS:
+  trunk:
+    - Giphy
+    - libwebp
+    - SnapKit
+    - SwiftProtobuf
+    - TrustWalletCore
+
+SPEC CHECKSUMS:
+  Giphy: 4d4d928dd781108efa2d9d03fc7eccde37e82ead
+  libwebp: e90b9c01d99205d03b6bb8f2c8c415e5a4ef66f0
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftProtobuf: 9c85136c6ba74b0a1b84279dbf0f6db8efb714e0
+  TrustWalletCore: 83653404a25c6cc6d74e62b8727f04d39cb9e21a
+
+PODFILE CHECKSUM: 311ea84394d050406d6b57a881ef166bd4753e7d
+
+COCOAPODS: 1.10.1
